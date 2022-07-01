@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#index {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/img/Valorant-sillos-twitch.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 2px rgb(124, 200, 252), 0 0 4px rgb(10, 200, 248);
+    letter-spacing: 2px;
+
+    .spam {
+        display: block;
+        position: absolute;
+        top: 30px;
+        font-size: 3rem;
+        a{
+            text-decoration: none;
+        }
+    }
+
+    .container-form {
+        width: 90%;
+        height: 90vh;
+        display: flex;
+        justify-content: space-around;
+        transition: all .5s ease-out;
+
+        .welcome-back {
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            .message {
+                padding: 1rem;
+
+                h2 {
+                    font-size: 1.7rem;
+                    padding: 1rem 0;
+                }
+
+                button {
+                    padding: 1rem;
+                    font-weight: 400;
+                    background-color: rgb(1, 115, 221);
+                    color: white;
+                    text-shadow: 0 0 6px black;
+                    letter-spacing: 1px;
+                    border-radius: 2rem;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    font-size: .9rem;
+                    margin-top: 2rem;
+                    transition: all .2s ease-in;
+
+                    &:hover {
+                        background-color: rgb(54, 54, 250);
+                        color: rgb(68, 202, 255);
+                        text-shadow: 0 0 3px black, 0 0 6px black
+                    }
+                }
+            }
+        }
+
+        .formulario {
+            width: 400px;
+            padding: 1rem;
+            margin: 2rem;
+            background-color: rgba(41, 0, 107, 0.671);
+            text-align: center;
+
+            .create-account {
+                padding: 2.7rem 0;
+                font-size: 1.7rem;
+            }
+
+            .cuenta-gratis {
+                padding: 2rem 0;
+            }
+
+            input {
+                width: 70%;
+                display: block;
+                margin: auto;
+                margin-bottom: 2rem;
+                background-color: transparent;
+                border: none;
+                border-bottom: white thin solid;
+                text-align: center;
+                outline: none;
+                padding: .2rem 0;
+                font-size: .9rem;
+                color: white;
+            }
+
+            input[type="submit"] {
+                width: 60%;
+                margin: auto;
+                border: solid thin white;
+                padding: .7rem;
+                border-radius: 2rem;
+                background-color: white;
+                font-weight: 600;
+                margin-top: 3rem;
+                font-size: .8rem;
+                cursor: pointer;
+                color: rebeccapurple;
+                letter-spacing: 1px;
+
+                &:hover {
+                    background-color: rgb(54, 54, 250);
+                    color: rgb(68, 202, 255);
+                    text-shadow: 0 0 3px black, 0 0 6px black
+                }
+            }
+        }
+    }
+
+    .sign-in {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .sign-up.active {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(/img/Valorant-sillos-twitch.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 2px rgb(124, 200, 252), 0 0 4px rgb(10, 200, 248);
+    letter-spacing: 2px;
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 2rem 0;
+
+        h1 a {
+            text-decoration: none;
+            font-size: 3rem;
+            -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+            line-height: 0.7em;
+            z-index: 1;
+            outline: none;
+            -webkit-animation: animate 5s linear infinite;
+            animation: animate 5s linear infinite;
+        }
+
+        @-webkit-keyframes animate {
+
+            0%,
+            18%,
+            20%,
+            50.1%,
+            60%,
+            65.1%,
+            80%,
+            90.1%,
+            92% {
+                color: #025d76;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+
+            9%,
+            18.1%,
+            20.1%,
+            30%,
+            50%,
+            60.1%,
+            65%,
+            80.1%,
+            90%,
+            92.1%,
+            100% {
+                color: cyan;
+                text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4;
+            }
+        }
+
+        @keyframes animate {
+
+            0%,
+            18%,
+            20%,
+            50.1%,
+            60%,
+            65.1%,
+            80%,
+            90.1%,
+            92% {
+                color: #0196ec;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+
+            9%,
+            18.1%,
+            20.1%,
+            30%,
+            50%,
+            60.1%,
+            65%,
+            80.1%,
+            90%,
+            92.1%,
+            100% {
+                color: darkblue;
+                text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4;
+            }
+        }
+    }
+
+    main {
+        h2 {
+            text-align: center;
+            font-size: 4rem;
+            padding: 2rem 0;
+        }
+
+        .example {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1rem;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 2rem;
+            width: 100%;
+            border-radius: 1.5rem;
+            color: white;
+            font-size: 1.5rem;
+            letter-spacing: 3px;
+            text-shadow: none;
+            box-shadow: 0 0 30px #0196ec, 0 0 40px black;
+
+            p {
+                font-size: 2.5rem;
+            }
+        }
+
+        .card {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1rem;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 2rem;
+            width: 100%;
+            border-radius: 1.5rem;
+            color: white;
+            letter-spacing: 3px;
+            text-shadow: none;
+            box-shadow: 0 0 30px #0196ec, 0 0 40px black;
+
+            div {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

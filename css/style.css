@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#index {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url(/img/Valorant-sillos-twitch.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: black;
+  text-shadow: 0 0 2px #7cc8fc, 0 0 4px #0ac8f8;
+  letter-spacing: 2px;
+}
+
+#index .spam {
+  display: block;
+  position: absolute;
+  top: 30px;
+  font-size: 3rem;
+}
+
+#index .spam a {
+  text-decoration: none;
+}
+
+#index .container-form {
+  width: 90%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+#index .container-form .welcome-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#index .container-form .welcome-back .message {
+  padding: 1rem;
+}
+
+#index .container-form .welcome-back .message h2 {
+  font-size: 1.7rem;
+  padding: 1rem 0;
+}
+
+#index .container-form .welcome-back .message button {
+  padding: 1rem;
+  font-weight: 400;
+  background-color: #0173dd;
+  color: white;
+  text-shadow: 0 0 6px black;
+  letter-spacing: 1px;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: .9rem;
+  margin-top: 2rem;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+#index .container-form .welcome-back .message button:hover {
+  background-color: #3636fa;
+  color: #44caff;
+  text-shadow: 0 0 3px black, 0 0 6px black;
+}
+
+#index .container-form .formulario {
+  width: 400px;
+  padding: 1rem;
+  margin: 2rem;
+  background-color: rgba(41, 0, 107, 0.671);
+  text-align: center;
+}
+
+#index .container-form .formulario .create-account {
+  padding: 2.7rem 0;
+  font-size: 1.7rem;
+}
+
+#index .container-form .formulario .cuenta-gratis {
+  padding: 2rem 0;
+}
+
+#index .container-form .formulario input {
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-bottom: 2rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: white thin solid;
+  text-align: center;
+  outline: none;
+  padding: .2rem 0;
+  font-size: .9rem;
+  color: white;
+}
+
+#index .container-form .formulario input[type="submit"] {
+  width: 60%;
+  margin: auto;
+  border: solid thin white;
+  padding: .7rem;
+  border-radius: 2rem;
+  background-color: white;
+  font-weight: 600;
+  margin-top: 3rem;
+  font-size: .8rem;
+  cursor: pointer;
+  color: rebeccapurple;
+  letter-spacing: 1px;
+}
+
+#index .container-form .formulario input[type="submit"]:hover {
+  background-color: #3636fa;
+  color: #44caff;
+  text-shadow: 0 0 3px black, 0 0 6px black;
+}
+
+#index .sign-in {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#index .sign-in.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+#index .sign-up.active {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.Home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url(/img/Valorant-sillos-twitch.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: black;
+  text-shadow: 0 0 2px #7cc8fc, 0 0 4px #0ac8f8;
+  letter-spacing: 2px;
+}
+
+.Home header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.Home header h1 a {
+  text-decoration: none;
+  font-size: 3rem;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  line-height: 0.7em;
+  z-index: 1;
+  outline: none;
+  -webkit-animation: animate 5s linear infinite;
+  animation: animate 5s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: #025d76;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  9%,
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: cyan;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4;
+  }
+}
+
+@keyframes animate {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: #0196ec;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  9%,
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: darkblue;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4;
+  }
+}
+
+.Home main h2 {
+  text-align: center;
+  font-size: 4rem;
+  padding: 2rem 0;
+}
+
+.Home main .example {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 2rem;
+  width: 100%;
+  border-radius: 1.5rem;
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  text-shadow: none;
+  -webkit-box-shadow: 0 0 30px #0196ec, 0 0 40px black;
+          box-shadow: 0 0 30px #0196ec, 0 0 40px black;
+}
+
+.Home main .example p {
+  font-size: 2.5rem;
+}
+
+.Home main .card {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 2rem;
+  width: 100%;
+  border-radius: 1.5rem;
+  color: white;
+  letter-spacing: 3px;
+  text-shadow: none;
+  -webkit-box-shadow: 0 0 30px #0196ec, 0 0 40px black;
+          box-shadow: 0 0 30px #0196ec, 0 0 40px black;
+}
+
+.Home main .card div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=style.css.map */
