@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #index {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -23,7 +23,8 @@
         position: absolute;
         top: 30px;
         font-size: 3rem;
-        a{
+
+        a {
             text-decoration: none;
         }
     }
@@ -148,7 +149,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url(/img/Valorant-sillos-twitch.jpg);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    background: url(../img/Valorant-sillos-twitch.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -156,11 +159,108 @@
     text-shadow: 0 0 2px rgb(124, 200, 252), 0 0 4px rgb(10, 200, 248);
     letter-spacing: 2px;
 
+    .btns2 {
+
+        display: flex;
+        padding: 1%;
+        width: 70%;
+        justify-content: space-between;
+        border-radius: 50px;
+        background: linear-gradient(rgba(0, 0, 255, 0), black, rgba(0, 0, 255, 0));
+
+        button {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 2rem;
+            background-color: transparent;
+            color: white;
+            border: none;
+
+            &:hover {
+                color: rgb(0, 119, 255);
+                text-shadow: 0 0 10px blue, 0 0 20px darkblue;
+            }
+        }
+    }
+
+    #news {
+        width: 80%;
+        border-radius: 50px;
+        background-color: black;
+        padding: 2%;
+        border: 5px solid rgba(81, 81, 255, 0.363);
+        box-shadow: 0 0 10px #00a2ff;
+        font-size: 1.4rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        h4,
+        h5 {
+            font-size: 1.7rem;
+        }
+
+        p,
+        ul {
+            margin: 10px;
+            text-shadow: none;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+
+            li {
+                margin-left: 2%;
+            }
+        }
+    }
+
+    #weapons {
+        div {
+            letter-spacing: 5px;
+            padding: 1%;
+            background-color: black;
+            display: flex;
+            width: 100%;
+            margin: 20px;
+            border-radius: 5px;
+            border: 2px solid aqua;
+            box-shadow: 0 0 10px aqua;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                img {
+                    border: 2px solid aqua;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    ;
+
     header {
         display: flex;
         justify-content: space-around;
         width: 100%;
         padding: 2rem 0;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        nav {
+            font-size: 1.7rem;
+            display: flex;
+            width: 30%;
+            justify-content: space-around;
+
+            a {
+                text-decoration: none;
+                color: white;
+                letter-spacing: 5px;
+
+                &:hover {
+                    color: #39b6ff;
+                    text-shadow: 0 0 10px black;
+                }
+            }
+        }
 
         h1 a {
             text-decoration: none;
@@ -283,12 +383,16 @@
             text-shadow: none;
             box-shadow: 0 0 30px #0196ec, 0 0 40px black;
 
-            div {
-                display: flex;
-                width: 100%;
-                justify-content: space-between;
+            input {
+                width: 60%;
+                letter-spacing: 1px;
+                font-size: 1.1rem;
+                text-align: center;
+                background-color: black;
+                color: white;
                 font-family: 'Times New Roman', Times, serif;
-                font-size: 1.2rem;
+                border: #0196ec 2px solid;
+                box-shadow: 0 0 10px #0196ec;
             }
         }
     }

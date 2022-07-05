@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>GG EZ</title>
+</head>
+
+<body class="Home">
+    <header>
+        <h1><a href="../index.html">GG EZ</a></h1>
+        <nav>
+            <a href="./news.html">News</a>
+            <a href="./weapons.html">Armas</a>
+            <a href="./home.html">Crosshair</a>
+        </nav>
+    </header>
+    <main id="news">
+        <h2>NOTAS DE LA VERSIÓN 4.10 DE VALORANT</h2>
+        <h5>24/05/22</h5>
+
+        <h4>ACTUALIZACIONES DE AGENTES</h4>
+        <p>Trasladamos las barras de carga/progreso de los agentes a una ubicación lógica y uniformamos el tamaño de
+            los agentes a continuación:</p>
+        <ul>
+            <li>Reyna</li>
+            <li>Cypher</li>
+            <li>Breach</li>
+            <li>Fade</li>
+            <li>Jett</li>
+            <li>Omen</li>
+            <li>Phoenix</li>
+            <li>Raze</li>
+            <li>Skye</li>
+            <li>Yoru</li>
+        </ul>
+        <h4>Omen</h4>
+        <p>Actualizamos su modelo en tercera persona para aumentar el detalle y la definición.</p>
+        <h4>ACTUALIZACIONES DE MAPAS</h4>
+        <h5>Haven</h5>
+        <p>Eliminamos cierta colisión de pixeles en las siguientes áreas:</p>
+        <ul>
+            <li>Ya no se puede subir caminando hasta la cobertura en el sitio A.</li>
+            <li>Ya no se puede llegar saltando hasta la cima de la cobertura del sitio C sin una habilidad de
+                aumento.</li>
+        </ul>
+        <h4>SISTEMAS DE JUGABILIDAD</h4>
+        <ul>
+            <li>Agregamos un nuevo gráfico de rendimiento donde se verán los valores de los errores de tiro en los
+                disparos más recientes en el cliente. Si bien dicha información es la misma que aparece en los ajustes
+                de error de mira, esto les permitirá a los jugadores diagnosticar su propio rendimiento después de un
+                enfrentamiento.</li>
+        </ul>
+        <h5>Actualizaciones de consistencia en la jugabilidad</h5>
+        <ul>
+            <li>Corregimos un problema donde la latencia o los picos en la tasa de fotogramas causaban un búfer de
+                procesamiento de movimiento excesivo que persistía durante varios segundos. Antes de solucionar este
+                problema, puede que hayas experimentado:
+                <ul>
+                    <li>Un aumento en la latencia de entrada asociada al servidor, lo cual podría causar que las
+                        entradas tarden más tiempo del esperado en aplicarse en base a tu latencia.</li>
+                    <li>Retraso adicional al ver a otros jugadores, lo cual no te daba el tiempo suficiente para
+                        reaccionar.</li>
+                    <li>En ambos casos, las latencias adicionales no se vieron reflejadas en los valores de latencia del
+                        tablero de puntuación en el juego ni en las “gráficas del tiempo prom./máx. de recorrido de red”
+                        actuales.</li>
+                </ul>
+            </li>
+            <li>Agregamos una nueva gráfica de rendimiento donde se muestra la “Fluctuación de red RTT” para que puedas
+                saber si estás experimentando problemas de red que no se reflejen en los valores prom./máx. de recorrido
+                de red.</li>
+            <li>Agregamos la nueva gráfica de rendimiento “Tiempo del trayecto de la red + retrasos de procesamiento”,
+                la cual captura la latencia efectiva que experimentas debido al tiempo de recorrido de red, el
+                procesamiento de movimientos en el servidor y las demoras en el procesamiento de los movimientos en el
+                cliente.</li>
+        </ul>
+        <h4>ERRORES</h4>
+        <h5>Agentes</h5>
+        <ul>
+            <li>Los aliados ahora escucharán los diálogos de “Destruido” en las habilidades desplegadas en todo el
+                mundo. Esto incluye:</li>
+            <li>Corregimos un error en el que Velocidad Relámpago de Neon se detenía automáticamente después de usar
+                Carril Rápido o Electrorrebote.</li>
+            <li>Corregimos un problema en el que los observadores veían que los enemigos de Viper emitían un brillo de
+                color rojo cuando estaban cerca pero no dentro de la Fosa Vipérea de Viper.</li>
+            <li>Corregimos un problema donde los observadores y espectadores no podían ver el radio de Rendezvous de
+                Chamber.</li>
+            <li>Corregimos la sensación de daño de La Incendiaria (Q) de Brimstone en porciones de 15 en lugar de 1,
+                como sucede con las demás habilidades de zona de daño en el juego.</li>
+        </ul>
+        <h5>Estéticos</h5>
+        <ul>
+            <li>
+                Corregimos algunos errores de titileo menores que ocurrían en los efectos visuales de la línea
+                transparente del arma de Protocolo al inspeccionar, usar la mira, recargar, etc.
+            </li>
+        </ul>
+        <h5>Sistemas de jugabilidad</h5>
+        <ul>
+            <li>Corregimos un error por el que las teclas rápidas específicas de un determinado agente a veces no
+                funcionaban correctamente a pesar de que aparecían como aplicadas en el menú de ajustes. (Si bien esta
+                corrección se aplicó en la versión 4.09, quisimos cerciorarnos de que los usuarios ya no experimentaran
+                problemas con este asunto antes de ponerle la etiqueta de “corregido”)</li>
+            <li>Corregimos un error en el que el informe de combate a veces no aparecía durante toda la partida.</li>
+        </ul>
+        <h4>ERRORES CONOCIDOS</h4>
+        <ul>
+            <li>Las barras de plantado y de desactivación de la Spike no aparecen para los observadores que tienen
+                activada la interfaz de juego minimalista, incluso si están observando al agente realizar dichas
+                acciones.</li>
+        </ul>
+    </main>
+
+    <script src="../javascript/news.js"></script>
+
+</body>
+
+</html>
