@@ -2,8 +2,6 @@
 /*                                  Crosshair                                 */
 /* -------------------------------------------------------------------------- */
 
-// Declaro variables.
-
 const usuarios = [{
         id: 1,
         nombre: "TenZ",
@@ -36,7 +34,7 @@ const usuarios = [{
     }
 ];
 
-// Creo mediante DOM los perfiles.
+/* -------------------------------- Crear DOM ------------------------------- */
 
 const here = document.querySelector("#here");
 

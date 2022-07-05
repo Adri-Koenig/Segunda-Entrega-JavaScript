@@ -34,38 +34,43 @@ function guardarUser(valor) {
     if (user.nombre == "" || user.email == "" || user.password == "") {
         return alert("Completa los datos correspondientes.");
     } else {
-        localStorage.setItem("item", JSON.stringify(user))
+        localStorage.setItem("usuarios", JSON.stringify(user)),
+            alert("Su cuenta ha sido registrada con éxito.")
     }
-
 }
 
 // Function al btn.
 
 guardar.addEventListener("click", (e) => {
     guardarUser()
-    return alert("Su cuenta ha sido registrada con éxito.")
 });
 
 /* ----------------------------- Ingreso al Home ---------------------------- */
 const
     emailLog = document.getElementById("emailLog"),
     passwordLog = document.getElementById("passwordLog"),
-    ingresar = document.getElementById("ingresar"),
-    btnLog = document.getElementById("btnLog"),
-    datosLog = JSON.parse(localStorage.getItem("item"));
+    ingresar = document.getElementById("ingresar");
 
-console.log(datosLog);
-console.log(btnLog);
-console.log(datosLog.email);
-console.log(datosLog.pass);
-console.log(ingresar);
+function inicioSesion(usuario) {
+    (one == emailLog.value && pass == passwordLog.value) ? window.location.href = "./html/home.html" : alert("Error al iniciar sesión.")
+}
 
-ingresar.addEventListener("submit", ()=> {
-    location.href('./html/home.html');
-})
+function recuperarLS() {
+    let datosLog = JSON.parse(localStorage.getItem("usuarios"));
+    return datosLog;
+}
 
-btnLog.addEventListener("click", () => {
-    if (emailLog.value === datosLog.email && passwordLog === datosLog.pass) {
-        location.href('./html/home.html');
-    }
-})
+const usuariosLS = recuperarLS();
+const {
+    email: one,
+    pass
+} = usuariosLS
+
+console.log(usuariosLS);
+console.log(one);
+console.log(pass);
+
+ingresar.addEventListener("click", (e) => {
+    e.preventDefault();
+    inicioSesion(usuariosLS)
+});

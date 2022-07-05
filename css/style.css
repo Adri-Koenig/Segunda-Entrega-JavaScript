@@ -3,10 +3,10 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #index {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,13 +174,102 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url(/img/Valorant-sillos-twitch.jpg);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background: url(../img/Valorant-sillos-twitch.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: black;
   text-shadow: 0 0 2px #7cc8fc, 0 0 4px #0ac8f8;
   letter-spacing: 2px;
+}
+
+.Home .btns2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1%;
+  width: 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 255, 0)), color-stop(black), to(rgba(0, 0, 255, 0)));
+  background: linear-gradient(rgba(0, 0, 255, 0), black, rgba(0, 0, 255, 0));
+}
+
+.Home .btns2 button {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2rem;
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+.Home .btns2 button:hover {
+  color: #0077ff;
+  text-shadow: 0 0 10px blue, 0 0 20px darkblue;
+}
+
+.Home #news {
+  width: 80%;
+  border-radius: 50px;
+  background-color: black;
+  padding: 2%;
+  border: 5px solid rgba(81, 81, 255, 0.363);
+  -webkit-box-shadow: 0 0 10px #00a2ff;
+          box-shadow: 0 0 10px #00a2ff;
+  font-size: 1.4rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.Home #news h4,
+.Home #news h5 {
+  font-size: 1.7rem;
+}
+
+.Home #news p,
+.Home #news ul {
+  margin: 10px;
+  text-shadow: none;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Home #news p li,
+.Home #news ul li {
+  margin-left: 2%;
+}
+
+.Home #weapons div {
+  letter-spacing: 5px;
+  padding: 1%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 20px;
+  border-radius: 5px;
+  border: 2px solid aqua;
+  -webkit-box-shadow: 0 0 10px aqua;
+          box-shadow: 0 0 10px aqua;
+}
+
+.Home #weapons div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.Home #weapons div div img {
+  border: 2px solid aqua;
+  height: 100%;
 }
 
 .Home header {
@@ -191,6 +280,28 @@
       justify-content: space-around;
   width: 100%;
   padding: 2rem 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.Home header nav {
+  font-size: 1.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.Home header nav a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.Home header nav a:hover {
+  color: #39b6ff;
+  text-shadow: 0 0 10px black;
 }
 
 .Home header h1 a {
@@ -329,15 +440,16 @@
           box-shadow: 0 0 30px #0196ec, 0 0 40px black;
 }
 
-.Home main .card div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.Home main .card input {
+  width: 60%;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  text-align: center;
+  background-color: black;
+  color: white;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 1.2rem;
+  border: #0196ec 2px solid;
+  -webkit-box-shadow: 0 0 10px #0196ec;
+          box-shadow: 0 0 10px #0196ec;
 }
 /*# sourceMappingURL=style.css.map */
