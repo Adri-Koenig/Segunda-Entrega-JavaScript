@@ -272,6 +272,90 @@
   height: 100%;
 }
 
+.Home #profile {
+  width: 80%;
+}
+
+.Home #profile div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2%;
+  border-radius: 50px;
+}
+
+.Home #profile div .datos {
+  background-color: black;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 600px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.Home #profile div .datos .encabezado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Home #profile div .datos .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+}
+
+.Home #profile div .datos img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.Home #profile div .grafico {
+  width: 30%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+
+.Home #profile div .grafico h3 {
+  font-size: 3rem;
+}
+
+.Home #profile div .grafico p {
+  font-size: 2rem;
+}
+
 .Home header {
   display: -webkit-box;
   display: -ms-flexbox;
