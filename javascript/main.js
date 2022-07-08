@@ -4,7 +4,8 @@
 const
     btnSignIn = document.querySelector(".sign-in-btn"),
     btnSignUp = document.querySelector(".sign-up-btn"),
-    signUp = document.querySelector(".sign-up"),
+    formulario = document.querySelector(".formulario")
+signUp = document.querySelector(".sign-up"),
     signIn = document.querySelector(".sign-in"),
     nombre = document.querySelector("#nombre"),
     email = document.querySelector("#email"),
@@ -32,17 +33,30 @@ function guardarUser(valor) {
         pass: password.value
     }
     if (user.nombre == "" || user.email == "" || user.password == "") {
-        return alert("Completa los datos correspondientes.");
+        Swal.fire({
+            icon: 'error',
+            title: 'Completa los datos correspondientes.'
+        })
     } else {
-        localStorage.setItem("usuarios", JSON.stringify(user)),
-            alert("Su cuenta ha sido registrada con éxito.")
+
+        localStorage.setItem("usuarios", JSON.stringify(user));
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Usuario registrado con éxito',
+            showConfirmButton: false,
+            timer: 1200
+        });
+        formulario.reset();
     }
 }
 
 // Function al btn.
 
 guardar.addEventListener("click", (e) => {
-    guardarUser()
+    e.preventDefault();
+    guardarUser();
+
 });
 
 /* ----------------------------- Ingreso al Home ---------------------------- */
@@ -52,7 +66,13 @@ const
     ingresar = document.getElementById("ingresar");
 
 function inicioSesion(usuario) {
-    (one == emailLog.value && pass == passwordLog.value) ? window.location.href = "./html/home.html" : alert("Error al iniciar sesión.")
+    (one == emailLog.value && pass == passwordLog.value) ? window.location.href = "./html/news.html": Swal.fire({
+        position: 'center',
+        icon: 'error',
+        title: 'Datos no registrados.',
+        showConfirmButton: false,
+        timer: 1200
+    });
 }
 
 function recuperarLS() {

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>GG EZ</title>
+</head>
+
+<body class="Home">
+    <header>
+        <h1><a href="../index.html">GG EZ</a></h1>
+        <nav>
+            <a href="./news.html">News</a>
+            <a href="./weapons.html">Armas</a>
+            <a href="./home.html">Crosshair</a>
+            <a href="./profile.html">Perfil</a>
+        </nav>
+    </header>
+    <main id="profile">
+        <div>
+            <div class="datos">
+                <div class="encabezado">
+                    <img src="../img/Avatar/fade.png" alt="">
+                    <h2 id="profileName"></h2>
+                </div>
+                <div class="stats">
+                    <img src="../img/Avatar/diamante.png" alt="">
+                    <p>Diamante</p>
+                    <ul>
+                        <li>Partidas Jugadas: 100</li>
+                        <li>Partidas Ganadas: 70</li>
+                        <li>Partidas Perdidas: 30</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grafico">
+                <h3>Winrate</h3>
+                <canvas id="myChart"></canvas>
+                <p id="winrate"></p>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../javascript/profile.js"></script>
+</body>
+
+</html>
