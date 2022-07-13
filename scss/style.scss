@@ -235,6 +235,38 @@
         }
     }
 
+    #maps {
+        div {
+            width: 100%;
+            text-align: center;
+
+            div {
+                width: 1000px;
+
+                div {
+                    width: 100%;
+
+                    h3 {
+                        font-size: 3rem;
+                    }
+
+                    p {
+                        font-size: 1.5rem;
+                        background-color: rgba(0, 0, 0, 0.726);
+                        border-radius: 50px;
+                        padding: 10px;
+                    }
+
+                    img {
+                        width: 50%;
+                        height: 600px;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+
     #profile {
         width: 80%;
 
