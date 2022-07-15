@@ -454,7 +454,7 @@
 }
 
 .Home header nav {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -467,6 +467,7 @@
   text-decoration: none;
   color: white;
   letter-spacing: 5px;
+  padding: 5px;
 }
 
 .Home header nav a:hover {

@@ -377,7 +377,7 @@
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
         nav {
-            font-size: 1.7rem;
+            font-size: 1.4rem;
             display: flex;
             width: 30%;
             justify-content: space-around;
@@ -386,6 +386,7 @@
                 text-decoration: none;
                 color: white;
                 letter-spacing: 5px;
+                padding: 5px;
 
                 &:hover {
                     color: #39b6ff;
