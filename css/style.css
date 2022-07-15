@@ -272,6 +272,62 @@
   height: 100%;
 }
 
+.Home #agents {
+  padding: 5%;
+}
+
+.Home #agents #datos {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  border: solid 2px darkblue;
+  -webkit-box-shadow: 0 0 10px #00a2ff, 0 0 30px blue;
+          box-shadow: 0 0 10px #00a2ff, 0 0 30px blue;
+}
+
+.Home #agents #datos div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Home #agents #datos div .agente {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: local;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Home #agents #datos div .agente h3 {
+  font-size: 5rem;
+}
+
+.Home #agents #datos div .agente p {
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.747);
+  border-radius: 20px;
+}
+
+.Home #agents #datos div .agente img {
+  width: 30%;
+  height: 200px;
+}
+
+.Home #agents #datos div .agente2 img {
+  width: 100%;
+}
+
 .Home #maps div {
   width: 100%;
   text-align: center;
